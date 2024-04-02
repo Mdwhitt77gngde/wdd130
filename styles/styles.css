@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {background-color: steelblue;
     padding: 10px;}
 nav a {
@@ -17,4 +22,30 @@ img {
 }
 p {
     padding: 10px;
+}
+
+/*selectors*/
+
+main img {
+    float: right;
+}
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: lightgray;
+    color: darkblue;
+}
+
+aside {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: white;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px; 
 }
