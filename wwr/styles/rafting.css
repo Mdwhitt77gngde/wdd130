@@ -27,13 +27,13 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
+p {
+    color: var(--secondary-color);
+}
+
 header {
     padding: 20px;
     background-color: var(--accent1-color);
-}
-
-p {
-    padding: 15px; 
 }
 
 nav {
@@ -57,4 +57,44 @@ nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    text-decoration: none;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white; 
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white; 
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
 }
