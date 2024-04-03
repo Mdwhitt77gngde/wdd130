@@ -34,12 +34,17 @@ p {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav a {
@@ -62,6 +67,7 @@ nav a:hover {
 
 .social-media a {
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .hero {
@@ -92,9 +98,38 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     color: white; 
+    max-width: 400px;
 }
 
 .hero article img {
     float: right;
     margin-left: 20px;
+}
+section {
+    margin-top: 40px; 
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+section img {
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
