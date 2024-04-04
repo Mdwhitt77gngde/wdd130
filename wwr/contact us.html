@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact River Rush Rafting Company</title>
+    <meta name="description" content="Contact River Rush Rafting Company for inquiries, reservations, or website suggestions. We're here to help you plan your next white water rafting adventure!">
+    <meta name="author" content="David Whitten">
+    <link rel="stylesheet" href="styles/site-plan-rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/rafting.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="company-info">
+            <h2>Company Information</h2>
+            <address>
+                River Rush Rafting Company<br>
+                123 Adventure Way<br>
+                River City, RA 12345
+            </address>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@riverrushrafting.com</p>
+            <!-- Embed Google Map here -->
+            <div class="google-map">
+                <!-- Embed Google Map iframe here -->
+            </div>
+        </section>
+
+        <section id="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>John Doe - River Guide</figcaption>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Jane Smith - Safety Officer</figcaption>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Mike Johnson - Trip Coordinator</figcaption>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="purpose">Purpose:</label><br>
+                <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                <label for="general-inquiry">General Inquiry</label><br>
+                <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                <label for="reservation-question">Reservation Question</label><br>
+                <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                <label for="website-suggestion">Website Suggestion</label><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 River Rush Rafting Company | David Whitten</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-icon.jpg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/twitter-icon.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram-icon.jpg" alt="Instagram">
+            </a>
+        </di>
+    </footer>
+</body>
+</html>
