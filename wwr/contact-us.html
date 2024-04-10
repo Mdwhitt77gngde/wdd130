@@ -6,7 +6,7 @@
     <title>Contact River Rush Rafting Company</title>
     <meta name="description" content="Contact River Rush Rafting Company for inquiries, reservations, or website suggestions. We're here to help you plan your next white water rafting adventure!">
     <meta name="author" content="David Whitten">
-    <link rel="stylesheet" href="styles/site-plan-rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact-us.html">Contact Us</a>
         </nav>
     </header>
 
@@ -37,18 +37,18 @@
 
         <section id="employee-profiles">
             <h2>Meet Our Team</h2>
-            <div class="employee">
+            <figure class="employee">
                 <img src="images/employee1.jpg" alt="Employee 1">
                 <figcaption>John Doe - River Guide</figcaption>
-            </div>
-            <div class="employee">
+            </figure>
+            <figure class="employee">
                 <img src="images/employee2.jpg" alt="Employee 2">
                 <figcaption>Jane Smith - Safety Officer</figcaption>
-            </div>
-            <div class="employee">
+            </figure>
+            <figure class="employee">
                 <img src="images/employee3.jpg" alt="Employee 3">
                 <figcaption>Mike Johnson - Trip Coordinator</figcaption>
-            </div>
+            </figure>
         </section>
 
         <section id="contact-form">
@@ -56,24 +56,26 @@
             <form action="submit_form.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
-
+        
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br>
-
-                <label for="purpose">Purpose:</label><br>
-                <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
-                <label for="general-inquiry">General Inquiry</label><br>
-                <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
-                <label for="reservation-question">Reservation Question</label><br>
-                <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
-                <label for="website-suggestion">Website Suggestion</label><br>
-
+        
+                <fieldset>
+                    <legend>Purpose:</legend>
+                    <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="general-inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                    <label for="reservation-question">Reservation Question</label><br>
+                    <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                    <label for="website-suggestion">Website Suggestion</label><br>
+                </fieldset>
+        
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-
+        
                 <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
                 <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
-
+        
                 <input type="submit" value="Submit">
             </form>
         </section>
@@ -91,7 +93,5 @@
             <a href="https://www.instagram.com/">
                 <img src="images/instagram-icon.jpg" alt="Instagram">
             </a>
-        </di>
+        </div>
     </footer>
-</body>
-</html>
