@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root {
     --primary-color: #76BED0;
@@ -132,4 +132,4 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
+} 
